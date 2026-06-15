@@ -23,7 +23,7 @@ function detectDisease() {
     document.getElementById("result").innerHTML =
         `<div class="detecting-text">🔍 Analysing image... Please wait</div>`;
 
-    fetch("http://127.0.0.1:5000/predict", {
+    fetch("https://ai-pest-monitoring.onrender.com/predict", {
         method: "POST",
         body: formData
     })
