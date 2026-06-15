@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pest Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <div class="logo">🌿</div>
+            <div>
+                <h1>AI Pest Monitoring System</h1>
+                <p class="tagline">Smart Detection for Healthier Crops</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Protect Your Crops with AI</h2>
+            <p>Upload a photo of your crop and our AI instantly identifies the pest and provides effective solutions — helping farmers save time, reduce losses, and grow better.</p>
+        </div>
+        <div class="hero-icons">
+            <div class="hero-icon">🌾<span>Crop Safe</span></div>
+            <div class="hero-icon">🔍<span>AI Detection</span></div>
+            <div class="hero-icon">💊<span>Solutions</span></div>
+        </div>
+    </section>
+
+    <!-- MAIN CARD -->
+    <main>
+        <div class="card">
+            <h3>🐛 Upload Crop Image</h3>
+            <p class="card-sub">Take a clear photo of the affected crop or leaf</p>
+
+            <label class="upload-area" id="uploadArea">
+                <input type="file" id="imageInput" accept="image/*" hidden>
+                <div class="upload-inner" id="uploadInner">
+                    <div class="upload-icon">📷</div>
+                    <p class="upload-text">Click to upload image</p>
+                    <p class="upload-hint">JPG, PNG supported</p>
+                </div>
+                <img id="preview" alt="Preview">
+            </label>
+
+            <button onclick="detectDisease()" id="detectBtn">
+                🔍 Detect Pest
+            </button>
+
+            <div id="result"></div>
+        </div>
+
+        <!-- HOW IT WORKS -->
+        <div class="steps-section">
+            <h3>How It Works</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-icon">📸</div>
+                    <p>Upload a photo of your crop</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-icon">🤖</div>
+                    <p>AI analyses the image</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-icon">✅</div>
+                    <p>Get pest name & solutions</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>🌿 AI Pest Monitoring System &nbsp;|&nbsp; Helping Farmers Grow Better</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
